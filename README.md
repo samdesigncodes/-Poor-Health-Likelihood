@@ -1,6 +1,11 @@
 # Poor-Health-Likelihood 📝
 ## Data Source 📊 [NPHA](https://archive.ics.uci.edu/dataset/936/national+poll+on+healthy+aging+(npha)).
 
+## Dataset Info
+The National Poll on Healthy Aging dataset was created to gather insights on the health, healthcare, and health policy issues affecting Americans aged 50 and older. By focusing on the perspectives of older adults and their caregivers, the University of Michigan aimed to inform the public, healthcare providers, policymakers, and advocates about the various aspects of aging. This includes topics like health insurance, household composition, sleep issues, dental care, prescription medications, and caregiving, thereby providing a comprehensive understanding of the health-related needs and concerns of the older population.
+
+The dataset was funded by AARP and Michigan Medicine, the University of Michigan's academic medical centre.
+
 ## Introduction 🟠
 Three models (Neural Networks, Random Forest, and Linear Regression) are used to predict outcomes based on input data, and the models' performance is cross-validated using k-fold and LOOCV to enable comparison of each model's performance.
 Since the focus of the analysis is to predict the likelihood of having poor health, The target variable (Physical Health) values, which include 1,2,3,4 and 5 representing Excellent, Very Good, Good, Fair, and Poor, respectively, transformed into a binary format suitable for binary classification, where the model predicts whether an individual's physical health score is 5 (coded as 1) or not 5 (coded as 0). This also means the primary form of logistic regression is used to model the binary variable and not multinominal logistic regression.
